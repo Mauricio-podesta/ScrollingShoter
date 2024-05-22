@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour
+public class ShootEnemy : MonoBehaviour
 {
     [SerializeField] GameObject Bulletprefab;
     [SerializeField] Transform SpawnPotition;
@@ -27,7 +27,7 @@ public class Shoot : MonoBehaviour
 
         GameObject NewBullet = Instantiate(Bulletprefab, SpawnPotition.position, Quaternion.identity);
         Rigidbody NewBulletRb = NewBullet.GetComponent<Rigidbody>();
-        NewBulletRb.AddRelativeForce(transform.up * BulletForce, ForceMode.Impulse);
+       
         Destroy(NewBullet, 2);
     }
 }
