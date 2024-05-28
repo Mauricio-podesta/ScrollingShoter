@@ -16,10 +16,10 @@ public class DrawGizmo : MonoBehaviour
                Mathf.Pow(t, 3) * controlpoints[3].position;
             Gizmos.DrawSphere(gizmopointspotition, 0.2F);
         }
-        Gizmos.DrawLine(new Vector3(controlpoints[0].position.x, controlpoints[0].position.y, 0f),
-                    new Vector3(controlpoints[1].position.x, controlpoints[1].position.y, 0f));
-        Gizmos.DrawLine(new Vector3(controlpoints[2].position.x, controlpoints[2].position.y, 0f),
-                    new Vector3(controlpoints[3].position.x, controlpoints[3].position.y, 0f));
+        Gizmos.DrawLine(new Vector3(controlpoints[0].position.x, 0f, controlpoints[0].position.z),
+                    new Vector3(controlpoints[1].position.x, 0f, controlpoints[1].position.z));
+        Gizmos.DrawLine(new Vector3(controlpoints[2].position.x, 0f,controlpoints[2].position.z),
+                    new Vector3(controlpoints[3].position.x, 0f, controlpoints[3].position.z));
     }
 
 }

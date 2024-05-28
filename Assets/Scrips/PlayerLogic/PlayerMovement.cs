@@ -10,7 +10,7 @@ public class PlayerMovement : Player
         movementrigthleft *= Time.deltaTime;
         float movementupdown = Input.GetAxis("Vertical") * Speed;
         movementupdown *= Time.deltaTime;
-        transform.Translate(movementrigthleft, movementupdown, 0);
+        transform.Translate(movementupdown, movementrigthleft, 0);
     }
     void Start()
     {

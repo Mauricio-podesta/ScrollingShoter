@@ -111,8 +111,8 @@ Transform:
   m_GameObject: {fileID: 1993769037395402}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.08916, z: 0.049946}
-  m_LocalScale: {x: 1, y: 0.6137572, z: 0.58719}
+  m_LocalPosition: {x: -3.1, y: 0.041407, z: -0.49852}
+  m_LocalScale: {x: 4.5660043, y: 0.91087705, z: 4.759369}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4197542629515248}
@@ -132,12 +132,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routes:
-  - {fileID: 4789472186806421230, guid: eeee81e01f938184493406484bbee5e1, type: 3}
-  - {fileID: 3799681835162511629, guid: 1c00179ae626cbb4b9184c3e27425925, type: 3}
-  - {fileID: 6832017127438113243, guid: 57bb1cf87b4fc8744ae242118ad1928a, type: 3}
-  - {fileID: 804393342305634637, guid: 04dee73b8fd150b4d9cc376d4a43ab42, type: 3}
-  - {fileID: 3313597228390392187, guid: 28e15d964358d5a46a3ed886a005ffb2, type: 3}
-  - {fileID: 1300917133305452206, guid: b7fc225cff75af641b730113730fee3f, type: 3}
+  - {fileID: 5035653774002038241, guid: 4506923f054fa38498d883d8d4b49ef8, type: 3}
+  - {fileID: 9079767258041020082, guid: 060fab8d9e5bfac478f312c8d3503271, type: 3}
+  - {fileID: 749680621710271906, guid: 93afec05f7c7fbd4682187d40cfadb6a, type: 3}
+  - {fileID: 342964533398557447, guid: 70596741e0163f0418ce64c7b90cb4da, type: 3}
+  - {fileID: 8397485196551526291, guid: 0a1b0ed8a783a8b4f8352c727c73db84, type: 3}
+  - {fileID: 6511485202076721775, guid: 0fa4a89b98ae68b41b63ac05af968cd3, type: 3}
   speedModifier: 1
 --- !u!65 &7377997882303533744
 BoxCollider:
@@ -208,3 +208,4 @@ MonoBehaviour:
   SpawnPotition: {fileID: 8288072706107572660}
   BulletForce: 20
   Timeshoot: 0
+  TimeDestroy: 50

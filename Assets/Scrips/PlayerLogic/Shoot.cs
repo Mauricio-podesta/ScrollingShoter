@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour
     [SerializeField] Transform SpawnPotition;
     [SerializeField] float BulletForce = 50f;
     [SerializeField] float Timeshoot = 0f;
+    [SerializeField] float TimeDestroy = 0f;
     void Start()
     {
 
@@ -27,7 +28,7 @@ public class Shoot : MonoBehaviour
 
         GameObject NewBullet = Instantiate(Bulletprefab, SpawnPotition.position, Quaternion.identity);
         Rigidbody NewBulletRb = NewBullet.GetComponent<Rigidbody>();
-        NewBulletRb.AddRelativeForce(transform.up * BulletForce, ForceMode.Impulse);
-        Destroy(NewBullet, 2);
+        NewBulletRb.AddRelativeForce(transform.forward * BulletForce, ForceMode.Impulse);
+        Destroy(NewBullet, TimeDestroy);
     }
 }

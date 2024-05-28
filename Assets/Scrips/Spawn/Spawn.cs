@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaculo;
-    [SerializeField] public Vector3 PositionSpawn;
+    [SerializeField] public Transform PositionSpawn;
     public float enemigos = 0;
     [SerializeField] float Tiempo = 0;
     private void Update()
@@ -20,7 +20,7 @@ public class Spawn : MonoBehaviour
         {
             int Randomindex = Random.Range(0, obstaculo.Length);
             GameObject obstaculoaleatorio = obstaculo[Randomindex];
-            Instantiate(obstaculoaleatorio, PositionSpawn, obstaculoaleatorio.transform.rotation);
+            Instantiate(obstaculoaleatorio, PositionSpawn.position, obstaculoaleatorio.transform.rotation);
         }
     
 }
